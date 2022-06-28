@@ -9,9 +9,11 @@
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
     "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
-    "deploy": "git push origin `git subtree split --prefix dist main`:gh-pages --force",
+    "predeply": "npm run build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint 'src/**/*.js' || true",
-    "prettify": "prettier --write 'src/**/*.js'"
+    "prettify": "prettier --write 'src/**/*.js'",
+    "prepare": "husky install"
   },
   "keywords": [
     "webpack",
@@ -34,7 +36,6 @@
     "eslint-plugin-prettier": "^4.0.0",
     "html-loader": "^3.1.2",
     "html-webpack-plugin": "^5.5.0",
-    "husky": "^8.0.1",
     "mini-css-extract-plugin": "^2.4.2",
     "postcss-loader": "^6.2.0",
     "postcss-preset-env": "^6.7.0",
@@ -53,10 +54,5 @@
   },
   "dependencies": {
     "gh-pages": "^4.0.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run build"
-    }
   }
 }
