@@ -11,20 +11,16 @@
     "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
+    "auto-deploy": "git push origin `git subtree split --prefix dist main`:gh-pages --force",
     "lint": "eslint 'src/**/*.js' || true",
-    "prettify": "prettier --write 'src/**/*.js'",
-    "precommit-msg": "echo 'Pre-commit checks...' && exit 0"
+    "prettify": "prettier --write 'src/**/*.js'"
   },
   "keywords": [
     "webpack",
     "webpack 5",
     "webpack boilerplate"
   ],
-  "pre-commit": [
-    "precommit-msg",
-    "build"
-  ],
-  "devDependencies": {
+    "devDependencies": {
     "@babel/core": "^7.15.8",
     "@babel/plugin-proposal-class-properties": "^7.14.5",
     "@babel/preset-env": "^7.15.8",
