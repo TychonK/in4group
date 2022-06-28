@@ -1,13 +1,16 @@
 {
-  "name": "webpack-boilerplate",
+  "name": "in4group",
   "version": "3.0.1",
   "description": "Sensible webpack 5 boilerplate using Babel and PostCSS.",
   "main": "index.js",
-  "author": "Tania Rascia",
+  "author": "TychonK",
   "license": "MIT",
+  "homepage": "https://TychonK.github.io/in4group",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
     "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "lint": "eslint 'src/**/*.js' || true",
     "prettify": "prettier --write 'src/**/*.js'"
   },
@@ -46,6 +49,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:taniarascia/webpack-boilerplate"
+    "url": "git@github.com:TychonK/in4group"
+  },
+  "dependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
