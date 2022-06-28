@@ -9,7 +9,6 @@
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
     "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
-    "postinstall": "node ./node_modules/husky/lib/installer/bin install",
     "deploy": "git push origin `git subtree split --prefix dist main`:gh-pages --force",
     "lint": "eslint 'src/**/*.js' || true",
     "prettify": "prettier --write 'src/**/*.js'"
@@ -56,8 +55,8 @@
     "gh-pages": "^4.0.0"
   },
   "husky": {
-      "hooks": {
-        "pre-commit": "npm run build"
-      }
+    "hooks": {
+      "pre-commit": "npm run build"
+    }
   }
 }
