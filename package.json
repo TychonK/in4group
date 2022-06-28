@@ -13,14 +13,14 @@
     "deploy": "gh-pages -d dist",
     "lint": "eslint 'src/**/*.js' || true",
     "prettify": "prettier --write 'src/**/*.js'",
-    "prepare": "husky install"
+    "precommit-msg": "echo 'Pre-commit checks...' && exit 0"
   },
   "keywords": [
     "webpack",
     "webpack 5",
     "webpack boilerplate"
   ],
-  "pre-commit": [ "npm run build" ],
+  "pre-commit": [ "precommit-msg", "build" ],
   "devDependencies": {
     "@babel/core": "^7.15.8",
     "@babel/plugin-proposal-class-properties": "^7.14.5",
