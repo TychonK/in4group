@@ -1,0 +1,54 @@
+.hero {
+    padding: 130px 0;
+}
+
+.hero-title {
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 0.95;
+    color: #FFFFFF;
+
+    margin: 0;
+    margin-left: 160px;
+}
+
+.hero-subtitle {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;   
+    color: #FFFFFF;
+
+    margin: 35px 0 0 170px;
+}
+
+.hero-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 18px 60px;
+    background: #FFFFFF;
+    border-radius: 7px;
+
+    margin-left: 180px;
+    margin-top: 70px;
+    
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    color: #02B8E0;
+    text-transform: uppercase;
+
+    transition: ease-out 0.6s;
+
+    &:hover,
+    &:focus {
+        box-shadow: inset 300px 0 0 0 #02B8E0;
+        color: white; 
+    }
+}

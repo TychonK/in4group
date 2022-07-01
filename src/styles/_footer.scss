@@ -1,0 +1,146 @@
+footer {
+    padding: 0 0 45px 0;
+    position: relative;
+
+    background: #F4F7FF;
+
+    &::before {
+            content: '';
+            display: block;
+            width: calc(100% - 124px);
+            height: 1px;
+
+            position: absolute;
+            bottom: 105px;
+            left: 50%;
+            transform: translate(-50%);
+    
+            background-color: #949494cd;
+        }
+}
+
+.rights-reserved {
+    margin-left: 105px;
+}
+
+.rights-reserved-text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.2;
+
+    margin: 0;
+
+    display: inline-block;
+    vertical-align: middle;
+
+    color: #6A6A6A;
+}
+
+.rights-mark {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 1;
+
+    margin: 0;
+
+    display: inline-block;
+    vertical-align: middle;
+
+    color: #6A6A6A;
+}
+
+.section_contacts {
+    padding: 106px 81px 0 115px;
+    margin-bottom: 133px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.contact-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1.2;
+    text-transform: uppercase;
+
+    margin: 0;
+}
+
+.contact-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.contact-list_item {
+    height: fit-content;
+    &:not(:first-child) {
+        margin-top: 15px;
+    }
+}
+
+.contact-link {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #8F8F8F;
+    display: flex;
+    align-items: center;
+
+    text-decoration: none;
+
+    &:hover .contact-icon{
+        fill: #444444;
+    }
+}
+
+.contact-icon {
+    width: 17px;
+    height: 17px;
+    fill: #8F8F8F;
+
+    margin-right: 10px;
+
+    transition: 0.4s;
+}
+
+.social-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.social-link {
+    &:hover .social-icon {
+        fill: #02B8E0;
+    }
+}
+
+.social-icon {
+    width: 38px;
+    height: 38px;
+    margin-right: 39px;
+
+    transition: 0.4s;
+}
+
+.logo-footer {
+    width: 225px;
+    height: fit-content;
+
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    position: absolute;
+}

@@ -1,7 +1,41 @@
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: 'Inter';
   src: url('../fonts/Inter.ttf');
 }
 
-@import 'variables';
-@import 'scaffolding';
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 400;
+  src: url('../fonts/Poppins-Regular.ttf');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 500;
+  src: url('../fonts/Poppins-Medium.ttf');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 600;
+  src: url('../fonts/Poppins-SemiBold.ttf');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-weight: 700;
+  src: url('../fonts/Poppins-Bold.ttf');
+}
+@font-face {
+  font-family: 'Abril Fatface';
+  src: url('../fonts/AbrilFatface-Regular.ttf');
+}
+
+@import "../../node_modules/normalize.css/normalize.css";
+@import './header';
+@import './hero';
+@import './entry';
+@import './footer';
+@import './partners';
+@import './form';

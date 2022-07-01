@@ -1,0 +1,129 @@
+.section_form {
+    padding: 81px 0 81px 105px;
+    background-image: linear-gradient(rgba(0, 27, 148, 0.65),rgba(0,
+        89,
+        148,
+        0.65)), url(../images/form-progressive.jpeg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.contact-form {
+    max-width: 550px;
+
+    margin-top: 50px;
+}
+
+.form-title {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 1.2;
+}
+
+.form-subtitle {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.2;
+
+    margin: 0;
+    margin-top: 15px;
+
+    color: #e8e8e8;
+}
+
+.user-box {
+    position: relative;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.input-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    pointer-events: none;
+    transition: .5s;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.form-input:focus~label,
+.form-input:valid~label {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+}
+
+.submit-button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .4s;
+    margin-top: 20px;
+    letter-spacing: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    border: 2px solid #03e9f4;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.submit-button:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+        0 0 25px #03e9f4,
+        0 0 50px #03e9f4;
+}
+
+.calling-girl {
+    position: absolute;
+    bottom: 0;
+    right: 0; 
+    height: calc(100% + 75px);
+
+    & img {
+        display: block;
+        height: 100%;
+    }
+}

@@ -9,9 +9,18 @@
   </head>
   <body>
     <div id="root">
-      <%= require('html-loader!./partials/header.html').default %>
-      <%= require('html-loader!./partials/nav.html').default %>
-      <%= require('html-loader!./partials/hero.html').default %>
+      <header>
+        <%= require('html-loader!./partials/nav.html').default %>
+        <%= require('html-loader!./partials/hero.html').default %>
+      </header>
+      <main>
+        <%= require('html-loader!./partials/entry.html').default %>
+        <%= require('html-loader!./partials/partners.html').default %>
+        <%= require('html-loader!./partials/form.html').default %>
+      </main>
+      <footer id="footer">
+        <%= require('html-loader!./partials/footer.html').default %>
+      </footer>
     </div>
   </body>
 </html>

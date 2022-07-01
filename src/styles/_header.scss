@@ -1,0 +1,74 @@
+header {
+    background-image: url(../images/hero-bg.jpeg);
+    background-size: cover;
+    background-position: center;
+ }
+
+ .navigation {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 0px 80px;
+    backdrop-filter: blur(3px);
+ }
+
+ .header-logo {
+    width: 70px;
+ }
+
+ .nav-link_list {
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+ }
+
+ .nav-link_item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    &:not(:first-child) {
+        margin-left: 44px;
+    }
+
+    &:not(:last-child)::after {
+        content: '';
+        border-radius: 0.5px;
+        position: absolute;
+        left: 50%;
+        bottom: 1px;
+        width: 0px;
+        height: 2px;
+        background: #333;
+        transition: all 0.45s;
+    }
+    &:hover:after {
+        width: 100%;
+        left: 0;
+    }
+ }
+
+ .nav-link {
+    color: black;
+    text-decoration: none;
+    padding: 10px 0;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14.5px;
+    line-height: 1.5;
+ }
+
+ .allegro-link {
+    padding: 8px 10px;
+    color: white; 
+    display: block;
+    background: #02B8E0;
+
+    transition: 0.25s;
+    &:hover,
+    &:focus {
+            box-shadow: 0 0.5em 0.5em -0.4em adjust-hue(#02B8E0, 45deg);
+            transform: translateY(-0.25em);
+        }
+ }
