@@ -1,5 +1,11 @@
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 65px;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/Ubuntu-Regular.ttf');
 }
 
 @font-face {
@@ -32,6 +38,11 @@ html {
   src: url('../fonts/AbrilFatface-Regular.ttf');
 }
 
+body {
+  font-family: 'Ubuntu';
+}
+
+@import './loader';
 @import "../../node_modules/normalize.css/normalize.css";
 @import './header';
 @import './hero';

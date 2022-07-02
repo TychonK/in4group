@@ -93,7 +93,7 @@
     text-decoration: none;
     text-transform: uppercase;
     overflow: hidden;
-    transition: .4s;
+    transition: transform .1s, background-color 0.4s, color 0.2s, border-radius 0.4s, box-shadow 0.4s;
     margin-top: 20px;
     letter-spacing: 4px;
     background: none;
@@ -105,6 +105,11 @@
     font-style: normal;
     font-weight: 500;
     font-size: 25px;
+
+    &:active {
+        color:rgb(195, 195, 195);
+        transform: translateY(10px);
+    }
 }
 
 .submit-button:hover {

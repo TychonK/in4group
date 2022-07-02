@@ -2,6 +2,8 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
+const Dotenv = require("dotenv-webpack");
+
 const paths = require('./paths')
 
 module.exports = {
@@ -42,6 +44,8 @@ module.exports = {
       template: paths.src + '/template.html', // template file
       filename: 'index.html', // output file
     }),
+    new Dotenv({
+      systemvars: true,}),
   ],
 
   // Determine how modules within the project are treated
