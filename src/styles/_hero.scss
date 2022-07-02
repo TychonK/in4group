@@ -1,5 +1,9 @@
 .hero {
     padding: 130px 0;
+
+    @media (min-width: $tablet) and (max-width: $pc) {
+        padding: 100px 0;
+    }
 }
 
 .hero-title {
@@ -12,6 +16,11 @@
 
     margin: 0;
     margin-left: 160px;
+
+    @media (min-width: $tablet) and (max-width: $pc) {
+        margin-left: 100px;
+        font-size: 65px;
+    }
 }
 
 .hero-subtitle {
@@ -22,6 +31,10 @@
     color: #FFFFFF;
 
     margin: 35px 0 0 170px;
+
+    @media (min-width: $tablet) and (max-width: $pc) {
+        margin: 30px 0 0 110px;
+    }
 }
 
 .hero-link {
@@ -50,5 +63,11 @@
     &:focus {
         box-shadow: inset 300px 0 0 0 #02B8E0;
         color: white; 
+    }
+
+    @media (min-width: $tablet) and (max-width: $pc) {
+        padding: 16px 35px;
+        margin-left: 110px;
+        margin-top: 40px;
     }
 }

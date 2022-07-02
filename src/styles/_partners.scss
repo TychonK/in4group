@@ -2,6 +2,10 @@
     background-color: #F4F7FF;
 
     padding: 81px 0;
+
+    @media (min-width: $tablet) and (max-width: $pc) {
+        padding: 60px 0;
+    }
 }
 
 .partners-title {
@@ -13,6 +17,10 @@
     text-align: center;
 
     margin: 0;
+
+    @media (min-width: $tablet) and (max-width: $pc) {
+        font-size: 60px;
+    }
 }
 
 .partner-link {
@@ -22,7 +30,7 @@
     align-items: center;
     justify-content: center;
     padding: 24px;
-    width: 364px;
+    width: 300px;
     transition: 0.3s ease-in;
 
     cursor: default;
@@ -34,6 +42,10 @@
             fill: #02B8E0;
         }
     }
+
+        @media (min-width: $tablet) and (max-width: $pc) {
+            width: 170px;
+        }
 }
 
 .partner-list {
@@ -47,4 +59,9 @@
 .partner-icon {
     fill: #AFB1B8;
     transition: 0.3s ease-in;
+
+    @media (min-width: $tablet) and (max-width: $pc) {
+            width: 150px;
+            height: 70px;
+        }
 }

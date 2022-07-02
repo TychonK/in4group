@@ -42,6 +42,7 @@ body {
   font-family: 'Ubuntu';
 }
 
+@import './vars';
 @import './loader';
 @import "../../node_modules/normalize.css/normalize.css";
 @import './header';

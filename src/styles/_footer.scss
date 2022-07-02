@@ -16,11 +16,23 @@ footer {
             transform: translate(-50%);
     
             background-color: #949494cd;
+
+            @media (min-width: $tablet) and (max-width: $pc) {
+                bottom: 98px;
+            }
         }
+
+    @media (min-width: $tablet) and (max-width: $pc) {
+        padding: 0 0 37px 0;
+    }
 }
 
 .rights-reserved {
     margin-left: 105px;
+
+    @media (min-width: $tablet) and (max-width: $pc) {
+        margin-left: 95px;
+    }
 }
 
 .rights-reserved-text {
@@ -36,6 +48,10 @@ footer {
     vertical-align: middle;
 
     color: #6A6A6A;
+
+    @media (min-width: $tablet) and (max-width: $pc) {
+        font-size: 14px;
+    }
 }
 
 .rights-mark {
@@ -51,6 +67,10 @@ footer {
     vertical-align: middle;
 
     color: #6A6A6A;
+
+    @media (min-width: $tablet) and (max-width: $pc) {
+        font-size: 21px;
+    }
 }
 
 .section_contacts {
@@ -59,6 +79,11 @@ footer {
     display: flex;
     justify-content: space-between;
     position: relative;
+
+    @media (min-width: $tablet) and (max-width: $pc) {
+        padding: 98px 70px 0 100px;
+        margin-bottom: 120px;
+    }
 }
 
 .contact-title {
@@ -70,13 +95,20 @@ footer {
     text-transform: uppercase;
 
     margin: 0;
+
+    @media (min-width: $tablet) and (max-width: $pc) {
+        font-size: 27px;
+    }
 }
 
 .contact-list {
     list-style: none;
     margin: 0;
     padding: 0;
-    margin-top: 20px;
+    margin-top: 30px;
+    @media (min-width: $tablet) and (max-width: $pc) {
+        margin-top: 25px;
+    }
 }
 
 .contact-list_item {
@@ -101,6 +133,10 @@ footer {
     &:hover .contact-icon{
         fill: #444444;
     }
+
+    @media (min-width: $tablet) and (max-width: $pc) {
+        font-size: 18;
+    }
 }
 
 .contact-icon {
@@ -111,6 +147,11 @@ footer {
     margin-right: 10px;
 
     transition: 0.4s;
+
+    @media (min-width: $tablet) and (max-width: $pc) {
+        width: 15px;
+        height: 15px;
+    }
 }
 
 .social-list {
@@ -132,6 +173,11 @@ footer {
     margin-right: 39px;
 
     transition: 0.4s;
+
+    @media (min-width: $tablet) and (max-width: $pc) {
+        width: 36px;
+        height: 36px;
+    }
 }
 
 .logo-footer {
@@ -143,4 +189,9 @@ footer {
     transform: translateX(-50%);
 
     position: absolute;
+
+    @media (min-width: $tablet) and (max-width: $pc) {
+        top: -20px;
+        width: 170px;
+    }
 }

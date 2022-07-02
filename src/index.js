@@ -33,15 +33,15 @@ const options = {
 const headroom = new Headroom(nav, options)
 headroom.init()
 
-const parallaxEle = document.querySelector('.hero-bg');
-new Ukiyo(parallaxEle, {
-    // scaling factor
-    scale: 1.1,
-    // animation speed
-    speed: 3,
-    // apply will-change: transform to the parallax element
-    willChange: true,
-})
+// const parallaxEle = document.querySelector('.hero-bg');
+// new Ukiyo(parallaxEle, {
+//     // scaling factor
+//     scale: 1.1,
+//     // animation speed
+//     speed: 3,
+//     // apply will-change: transform to the parallax element
+//     willChange: true,
+// })
 
 const form = document.querySelector('.contact-form')
 
