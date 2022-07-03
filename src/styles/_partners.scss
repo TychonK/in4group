@@ -3,7 +3,7 @@
 
     padding: 81px 0;
 
-    @media (min-width: $tablet) and (max-width: $pc) {
+    @media (max-width: $pc) {
         padding: 60px 0;
     }
 }
@@ -20,6 +20,9 @@
 
     @media (min-width: $tablet) and (max-width: $pc) {
         font-size: 60px;
+    }
+    @media (max-width: 767.5px) {
+        font-size: 50px;
     }
 }
 
@@ -46,6 +49,9 @@
         @media (min-width: $tablet) and (max-width: $pc) {
             width: 170px;
         }
+        @media (max-width: 767.5px) {
+            width: 200px;
+        }
 }
 
 .partner-list {
@@ -54,6 +60,21 @@
     display: flex;
     justify-content: space-around;
     margin-top: 50px;
+
+    @media (max-width: 767.5px) {
+        flex-direction: column;
+    }
+    
+}
+
+.partner-list_item {
+    @media (max-width: 767.5px) {
+        display: flex;
+        justify-content: center;
+        &:not(:first-child) {
+            margin-top: 50px;
+        }
+    }
 }
 
 .partner-icon {
@@ -61,7 +82,12 @@
     transition: 0.3s ease-in;
 
     @media (min-width: $tablet) and (max-width: $pc) {
-            width: 150px;
-            height: 70px;
-        }
+        width: 150px;
+        height: 90px;
+    }
+
+    @media (max-width: 767.5px) {
+        width: 150px;
+        height: 70px;
+    }
 }

@@ -33,6 +33,10 @@ footer {
     @media (min-width: $tablet) and (max-width: $pc) {
         margin-left: 95px;
     }
+    @media (max-width: 767.5px) {
+        margin: 0;
+        text-align: center;
+    }
 }
 
 .rights-reserved-text {
@@ -84,6 +88,12 @@ footer {
         padding: 98px 70px 0 100px;
         margin-bottom: 120px;
     }
+    @media (max-width: 767.5px) {
+        padding: 180px 20px 0 20px;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 80px;
+    }
 }
 
 .contact-title {
@@ -98,6 +108,10 @@ footer {
 
     @media (min-width: $tablet) and (max-width: $pc) {
         font-size: 27px;
+    }
+    @media (max-width: 767.5px) {
+        font-size: 28px;
+        text-align: center;
     }
 }
 
@@ -115,6 +129,10 @@ footer {
     height: fit-content;
     &:not(:first-child) {
         margin-top: 15px;
+    }
+    @media (max-width: 767.5px) {
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -135,7 +153,11 @@ footer {
     }
 
     @media (min-width: $tablet) and (max-width: $pc) {
-        font-size: 18;
+        font-size: 18px;
+    }
+
+    @media (max-width: 767.5px) {
+        font-size: 20px;
     }
 }
 
@@ -157,8 +179,22 @@ footer {
 .social-list {
     list-style: none;
     padding: 0;
+    margin: 0;
     display: flex;
     align-items: center;
+    @media (max-width: 767.5px) {
+        margin-top: 70px;
+        justify-content: center;
+    }
+}
+
+.social-list-item {
+    &:not(:first-child) {
+        @media (max-width: 767.5px) {
+            margin-left: 45px;
+        }
+    }
+    
 }
 
 .social-link {
@@ -178,6 +214,11 @@ footer {
         width: 36px;
         height: 36px;
     }
+    @media (max-width: 767.5px) {
+        margin: 0;
+        width: 45px;
+        height: 45px;
+    }
 }
 
 .logo-footer {
@@ -193,5 +234,10 @@ footer {
     @media (min-width: $tablet) and (max-width: $pc) {
         top: -20px;
         width: 170px;
+    }
+
+    @media (max-width: 767.5px) {
+        top: -20px;
+        width: 200px;
     }
 }

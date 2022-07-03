@@ -4,6 +4,9 @@
     @media (min-width: $tablet) and (max-width: $pc) {
         padding: 100px 0;
     }
+    @media (max-width: 767.5px) {
+        padding: 90px 0 70px 0;
+    }
 }
 
 .hero-title {
@@ -21,6 +24,11 @@
         margin-left: 100px;
         font-size: 65px;
     }
+    @media (max-width: 767.5px) {
+        margin-left: 0;
+        text-align: center;
+        font-size: 50px;
+    }
 }
 
 .hero-subtitle {
@@ -34,6 +42,11 @@
 
     @media (min-width: $tablet) and (max-width: $pc) {
         margin: 30px 0 0 110px;
+    }
+    @media (max-width: 767.5px) {
+        text-align: center;
+        margin: 0;
+        margin-top: 20px;
     }
 }
 
@@ -57,7 +70,7 @@
     color: #02B8E0;
     text-transform: uppercase;
 
-    transition: ease-out 0.6s;
+    transition: box-shadow ease-out 0.6s, color linear 0.2s, transform linear 0.1s;
 
     &:hover,
     &:focus {
@@ -65,9 +78,22 @@
         color: white; 
     }
 
+    &:active {
+        color: rgb(195, 195, 195);
+        transform: translateY(10px);
+    }
+
     @media (min-width: $tablet) and (max-width: $pc) {
         padding: 16px 35px;
         margin-left: 110px;
         margin-top: 40px;
+    }
+
+    @media (max-width: 767.5px) {
+        margin-top: 90px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 16px 30px;
+        transition: box-shadow ease-out 0.2s, color linear 0.2s, transform linear 0.1s;
     }
 }

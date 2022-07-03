@@ -8,12 +8,24 @@ header {
  }
  
  .hero-bg {
+   display: none;
    position: absolute;
    top: 50%;
    left: 0;
    width: 100%;
    z-index: -1;
    transform: translateY(-50%);
+   @media (min-width: $tablet) {
+      display: block;
+   }
+ }
+
+ .hero-bg.mobile {
+   display: block;
+   @media (min-width: $tablet) {
+      display: none;
+      top: 0;
+   }
  }
 
  .navigation {
@@ -45,6 +57,10 @@ header {
    @media (min-width: $tablet) and (max-width: $pc) {
       margin-left: 40px;
    }
+
+   @media (max-width: 767.5px) {
+      margin-left: 15px;
+   }
  }
 
  .nav-link_list {
@@ -60,6 +76,10 @@ header {
       width: 100%;
       justify-content: space-around;
     }
+   
+    @media (max-width: $tablet) {
+      display: none;
+   }
  }
 
  .nav-link_item {
