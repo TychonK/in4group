@@ -24,14 +24,13 @@ header {
    display: block;
    @media (min-width: $tablet) {
       display: none;
-      top: 0;
    }
  }
 
  .navigation {
     position: fixed;
     width: 100%;
-    display: flex;
+    display: none;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.9);
     //padding: 0px 80px;
@@ -40,6 +39,10 @@ header {
 
     will-change: transform;
     transition: transform 500ms ease;
+
+    @media (min-width: $tablet) {
+      display: flex;
+    }
  }
 
  .navigation--pinned {
@@ -59,7 +62,7 @@ header {
    }
 
    @media (max-width: 767.5px) {
-      margin-left: 15px;
+      margin: -7px -7px -7px 15px;
    }
  }
 
@@ -77,7 +80,7 @@ header {
       justify-content: space-around;
     }
    
-    @media (max-width: $tablet) {
+    @media (max-width: 767.5px) {
       display: none;
    }
  }
